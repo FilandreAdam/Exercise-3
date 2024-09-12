@@ -53,6 +53,7 @@ if (file_exists($filename)) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 <body>
+    <div class="container">
     <h1>To-Do List</h1>
     <form method="POST" action="">
         <input type="text" name="task" placeholder="Add a new task" required>
@@ -74,7 +75,7 @@ if (file_exists($filename)) {
             <?php endforeach; ?>
         <?php endif; ?>
     </ul>
-
+    </div>               
     <!-- SweetAlert2 JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- custom JavaScript -->
